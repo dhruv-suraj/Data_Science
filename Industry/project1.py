@@ -4,12 +4,19 @@ from PIL import Image
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 text=pytesseract.image_to_string(Image.open(r'invoice6.png'))
 # print(text)
-num1 = re.findall(r'\d+\.\d+', text)
-print(num1)
+text=text.replace(',','')
+num = re.findall(r'\d+\.\d+', text)
+print(num)
     # num.sort()
-list1 = sorted(num1, key=float)
-a=list1[len(list1)-1]
-print(a)
+maxamount = max(num,key=lambda x:float(x))
+# list1 = sorted(num1, key=float)
+if len(num) == 0:
+    print('invoice cant be read')
+else:
+    print('The invoice amount is ' +maxamount)
+# a=list1[len(list1)-1]
+# print(a)
 # num2 = re.findall(r'\d+\,\d+\.\d+', text)
 # if total==num1 or total==num2:
 # or num=re.findall(r'\d+\.\d+\,\d+', text)
+
