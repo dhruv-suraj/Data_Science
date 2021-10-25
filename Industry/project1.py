@@ -16,7 +16,5 @@ else:
     print('The invoice amount is ' +maxamount)
 # a=list1[len(list1)-1]
 # print(a)
-# num2 = re.findall(r'\d+\,\d+\.\d+', text)
-# if total==num1 or total==num2:
-# or num=re.findall(r'\d+\.\d+\,\d+', text)
+
 
