@@ -5,7 +5,7 @@ import traceback
 # enable less secure apps on your google account
 # https://myaccount.google.com/lesssecureapps
 
-host = "imap.gmail.com"
+host = "dhruvsuraj2001@gmail.com"
 username = "username"
 password = 'password'
 download_folder = "/Users/dhruvsuraj/Desktop/Data_Science/Week2/project/downloads"
